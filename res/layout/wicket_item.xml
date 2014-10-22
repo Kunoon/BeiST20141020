@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- wicket item -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<CheckBox
+        android:id="@+id/wicket_chechbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+	<!-- 序号
+
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" 
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_weight="2"
+		android:id="@+id/Wicket_TextView_GoodNum"
+		android:textSize="@dimen/wicket_list_content"
+		android:textColor="@color/black"
+	/>
+	  -->
+	<!-- 商品ID
+	android:textColor="@color/green"
+	 -->
+	<TextView
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_weight="1.5"
+		android:id="@+id/Wicket_TextView_GoodID"
+		android:textSize="@dimen/wicket_list_title"
+		android:textColor="@android:color/black"
+  	/>
+  	
+	<!-- 商品名称  -->
+	<TextView
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_weight="1.5"
+		android:id="@+id/Wicket_TextView_GoodName"
+		android:textSize="@dimen/wicket_list_title"
+		android:textColor="@android:color/black"
+  	/>
+	<!-- 门票数量  -->
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center_horizontal"
+		android:layout_weight="1.9"
+		android:id="@+id/Wicket_TextView_GoodQuantity"
+		android:textSize="@dimen/wicket_list_title"
+		android:textColor="@android:color/black"
+		android:background="@drawable/bt_et"
+	/>
+	<!-- 门票状态  -->
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_weight="1.5"
+		android:id="@+id/Wicket_TextView_GoodStatus"
+		android:textSize="@dimen/wicket_list_title"
+		android:textColor="@android:color/black"
+	/>
+</LinearLayout>

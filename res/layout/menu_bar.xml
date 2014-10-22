@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <Button
+        android:id="@+id/bwicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bcheck"
+        android:background="@drawable/menu_bt_wicket" />
+
+    <Button
+        android:id="@+id/bcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bsalescount"
+        android:background="@drawable/menu_bt_check" />
+
+    <Button
+        android:id="@+id/bsalescount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bpwd"
+        android:background="@drawable/menu_bt_salescount" />
+
+    <Button
+        android:id="@+id/bpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/menu_bt_pwd" />
+
+    <Button
+        android:id="@+id/bset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bpwd"
+        android:background="@drawable/menu_bt_set" />
+
+    <Button
+        android:id="@+id/bupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bset"
+        android:background="@drawable/menu_bt_update" />
+
+    <Button
+        android:id="@+id/binit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bupdate"
+        android:background="@drawable/menu_bt_init" />
+
+</RelativeLayout>

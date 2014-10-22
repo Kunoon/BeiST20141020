@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BeiSmart 3 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_keyboard"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/tv"
+        android:layout_width="380px"
+        android:layout_height="fill_parent"
+        android:focusable="false"
+        android:textSize="50px"
+		android:inputType="none" />
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view_id"
+        android:layout_width="420px"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        
+        
+        android:background="@android:color/transparent"
+        android:keyBackground="@drawable/key"
+        
+        android:keyPreviewHeight="100sp"
+        android:keyTextSize="50sp"
+        android:keyTextColor="#FF000000"  
+        android:labelTextSize="50sp"
+        android:shadowColor="#BBFFFFFF"
+         />
+</LinearLayout>

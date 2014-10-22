@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="system_version">20141020</string>
+    <string name="setting_command_string">123</string>
+    <string name="init_welcome">欢迎使用一证通智能检票系统</string>
+    <string name="init_printfPoint">请直接刷身份证或者输入身份证号和验证码</string>
+    <string name="button_menu">目录</string>
+    <string name="button_back">返回</string>
+    <string name="title_count_check">检索页面</string>
+    <string name="title_count_setpasswd">修改密码</string>
+    <string name="title_count_sysparameter">系统参数</string>
+    <string name="title_count_syseting">系统设置</string>
+    <string name="init_support0">故障咨询：杭州贝竹电子商务有限公司</string>
+    <string name="init_support1">网址：www.bzezt.com\t\t电话：400-0571-648</string>
+    
+    <string name="edit_hint_idnum">请输入身份证号</string>
+    <string name="edit_hint_orderid">请输入订单号</string>
+    <string name="edit_hint_goodname">请输入商品名称</string>
+    <string name="forparameterset">修改</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="Hide">后台运行</string>
+    <string name="hello">Hello World, BeiSmartTravelActivity!</string>
+    <string name="bt_dev_name4id">BEI_IDReader</string>
+    <string name="bt_dev_class">1F1F</string>
+    <string name="bt_on">开启蓝牙……</string>
+    <string name="bt_connecting">连接远程设备……</string>
+    <string name="app_name">BeiSmartTravel</string>
+    <string name="bton_con_id">连接到IDReader</string>
+    <string name="bton_con_ir">连接到IRReader</string>
+    <string name="title_connected_to">Connected: </string>
+    <string name="title_not_connected">not connected</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="wicket_editext_id">身份证号码：</string>
+    <string name="wicket_yerorno">是否检票</string>
+    <string name="id_error">刷卡无效请重刷！</string>
+    
+    <string name="default_user">BeiZhu</string>
+    <!-- 控件作用描述 -->
+    <string name="display_user_avatar">显示用户头像</string>
+    
+    <string name="wicket_tickects">检票</string>
+    <!-- menu内容 -->
+    <string name="menu_main_wicket">检票</string>
+    <string name="menu_main_check">查票</string>
+    <string name="menu_set_passwd">修改密码</string>
+    <string name="menu_set_parameter">系统设置</string>
+    <string name="menu_set_updata">检查更新</string>
+    <string name="menu_set_init">设备初始化</string>
+    <!-- Title -->
+    <string name="goods_number">序号</string>
+    <string name="goods_id">ID</string>
+    <string name="goods_name">名称</string>
+    <string name="goods_quantity">数量</string>
+    <string name="goods_status">状态</string>
+    <string name="goods_status_pay">已付</string>
+    <string name="goods_status_unpay">未付</string>
+    <string name="goods_status_used">已检</string>
+    <string name="goods_status_unused">未检</string>
+    <string name="goods_status_unused_used">全部</string>
+    <!-- Dialog -->
+    <string name="dialog_to_pay">到付及改票窗体</string>
+    <string name="dialog_to_pay_textview_quantity">门票数量：</string>
+    <string name="dialog_to_pay_warn">订单修改数量必需小于预订数量且大于0，否则系统将置为预订数量！</string>
+    <string name="dialog_to_pay_warning">订单修改数量大于预订数量！！！</string>
+    
+    <string name="myDialog_updata_title">软件升级</string>
+    <string name="myDialog_updata_positive">升级</string>
+    <string name="myDialog_updata_negative">稍后再说</string>
+    
+    <string name="myDialog_init_title">设备初始化</string>
+    <string name="myDialog_init_message">初始化后，该机子所存的数据也将被格式化！\n您确认设备初始化？</string>
+    
+    <string name="myDialog_wait_title_update">正在检查更新……</string>
+    <string name="myDialog_wait_title_init">正在初始化系统……</string>
+    <string name="myDialog_wait_title_getTB">正在从网络获取淘宝订单……</string>
+    <!-- check -->
+    <string name="check_key_word">关键词查询：</string>
+    <string name="check_id_num">身份证号：</string>
+    <string name="check_order_id">订单ID：</string>
+    <string name="check_good_name">商品名称：</string>
+    <string name="check_period">时间段查询：</string>
+    <string name="check_time_begin">起始时间：</string>
+    <string name="check_time_end">结束时间：</string>
+    <string name="check_time_defaul">点击设置时间</string>
+    <string name="check_paystatus">付款状态：</string>
+    <string name="check_usestatus">使用状态：</string>
+    <string name="check_check">查询</string>
+    <string name="check_check_key_word">查询关键词：</string>
+    <string name="check_count_tickets">本次查询订单数量为：</string>
+    <string name="check_count_day">本日已检：0 张</string>
+    <string name="check_count_week">本周已检：0 张</string>
+    <string name="check_count_month">本月已检：0 张</string>
+    <string name="check_status_pay">已付订单</string>
+    <string name="check_status_unpay">未付订单</string>
+    <string name="check_status_unpay_pay">全部订单</string>
+    <!-- setting -->
+    <string name="set_passwd_old">原    密    码：</string>
+    <string name="set_passwd_scan_old">请输入原密码</string>
+    <string name="set_passwd_new">新    密    码：</string>
+    <string name="set_passwd_scan_new">请输入新密码</string>
+    <string name="set_passwd_again">确认新密码：</string>
+    <string name="set_passwd_scan_again">请输入确认密码</string>
+    <string name="setting_system">系统参数设置</string>
+    <string name="setting_scenic_name">景 区 名 称 ：</string>
+    <string name="setting_scenic_autocheck">自   动   检   票：</string>
+    <string name="setting_scenic_topay">景   区   到   付：</string>
+    <string name="setting_scenic_id">设      备      ID：</string>
+    <string name="setting_scenic_add">服务器地址：</string>
+    <string name="setting_scenic_port">检票打印数：</string>
+    <string name="setting_communicate_time">检票等待时间：</string>
+    <string name="setting_ishow_pay">是否显示已付：</string>
+    <string name="setting_sys_version">系统版本： </string>
+    
+
+</resources>

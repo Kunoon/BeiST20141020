@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_wicket"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/setPasswdImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bt_menu_button"
+            android:text="@string/button_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_butWordSize" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+	        android:focusable="true"
+	    	android:focusableInTouchMode="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_counTitleSize"
+            android:text="@string/title_count_setpasswd" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+    	android:orientation="horizontal"
+        android:layout_weight="0.4" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+        	android:layout_weight="6"
+        	android:background="@drawable/bg_set_left" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+        	android:layout_weight="1"
+        	android:background="@drawable/bg_set_middle" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+        		android:layout_weight="1" >
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+		
+		            <TableRow
+		                android:id="@+id/tableRow1"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		
+		                <TextView
+		                    android:id="@+id/textView1"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/set_passwd_old"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <EditText
+		                    android:id="@+id/myEditText_OldPassword"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:ems="10"
+		                    android:hint="@string/set_passwd_scan_old"
+		                    android:inputType="textPassword" />
+		            </TableRow>
+		
+		            <TableRow
+		                android:id="@+id/tableRow2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		
+		                <TextView
+		                    android:id="@+id/textView2"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/set_passwd_new"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <EditText
+		                    android:id="@+id/myEditText_NewPasswd"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:ems="10"
+		                    android:hint="@string/set_passwd_scan_new"
+		                    android:inputType="textPassword" >
+		                </EditText>
+		            </TableRow>
+		
+		            <TableRow
+		                android:id="@+id/tableRow3"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		
+		                <TextView
+		                    android:id="@+id/textView3"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/set_passwd_again"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <EditText
+		                    android:id="@+id/myEditText_ConfirmNewPassword"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:ems="10"
+		                    android:hint="@string/set_passwd_scan_again"
+		                    android:inputType="textPassword" />
+		            </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+        		android:layout_weight="5" >
+
+                <Button
+                    android:id="@+id/myButtonPasswdOK"
+                    android:layout_width="@dimen/dp_okbutton_width"
+                    android:layout_height="@dimen/dp_okbutton_hight"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+	            	android:background="@drawable/bt_button"
+                    android:textSize="@dimen/sp_butWordSize"
+	                android:text="@string/ok" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+        	android:layout_weight="6"
+        	android:background="@drawable/bg_set_right" >
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/init_support1"
+            android:textSize="@dimen/sp_welNoteSize" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/sp_welNoteSize"
+            android:text="@string/init_support0" />
+
+    </RelativeLayout>
+
+</LinearLayout>

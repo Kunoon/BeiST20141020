@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_wicket"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9" >
+
+        <Button
+            android:id="@+id/mainImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bt_menu_button"
+            android:text="@string/button_menu"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_butWordSize" />
+
+        <TextView
+            android:id="@+id/commRightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/mainImageButton"
+            android:layout_alignBottom="@+id/mainImageButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="21dp"
+            android:text="当前网络状态：断"
+            android:textSize="@dimen/sp_butWordSize" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_main" >
+
+        <TextView
+            android:id="@+id/textViewWelcomeWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+	        android:text="@string/init_welcome"
+	        android:textColor="@color/welTitle_color"
+	        android:textSize="@dimen/sp_welWordSize" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9" >
+
+        <TextView
+            android:id="@+id/textViewSupport0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/init_support1"
+            android:textSize="@dimen/sp_welNoteSize" />
+
+        <TextView
+            android:id="@+id/textViewSupport1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textViewSupport0"
+            android:layout_centerHorizontal="true"
+            android:text="@string/init_support0"
+            android:textSize="@dimen/sp_welNoteSize" />
+
+        <Button
+        	android:id="@+id/Button_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+	        android:text="@string/init_printfPoint"
+	        android:textSize="@dimen/sp_butWordSize"
+	        android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+</LinearLayout>

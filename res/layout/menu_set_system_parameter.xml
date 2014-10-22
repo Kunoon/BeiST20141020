@@ -1,0 +1,300 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_wicket"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/setParameterImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bt_menu_button"
+            android:text="@string/button_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_butWordSize" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_counTitleSize"
+            android:text="@string/title_count_sysparameter" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+    	android:orientation="horizontal"
+        android:layout_weight="0.4" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+        	android:layout_weight="6"
+        	android:background="@drawable/bg_set_left" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+        	android:layout_weight="1"
+        	android:background="@drawable/bg_set_middle" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+		            <TableRow
+		                android:id="@+id/tableRow1"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/setting_scenic_name"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <TextView
+		                    android:id="@+id/myTextView_ScenicName"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		                
+		                <TextView
+		                    android:layout_width="@dimen/dp_check_gap"
+		                    android:layout_height="wrap_content" />
+		
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/setting_scenic_autocheck"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <TextView
+		                    android:id="@+id/myTextView_AutoWicket"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		            </TableRow>
+		
+		            <TableRow
+		                android:id="@+id/tableRow2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/setting_scenic_id"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <TextView
+		                    android:id="@+id/myTextView_DeviceID"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <TextView
+		                    android:layout_width="@dimen/dp_check_gap"
+		                    android:layout_height="wrap_content" />
+		                
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/setting_scenic_topay"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <TextView
+		                    android:id="@+id/myTextView_ToPay"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		            </TableRow>
+		
+		            <TableRow
+		                android:id="@+id/tableRow3"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/setting_scenic_add"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		                
+		                <TextView
+		                    android:id="@+id/myTextView_ServerAdd"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <TextView
+		                    android:layout_width="@dimen/dp_check_gap"
+		                    android:layout_height="wrap_content" />
+		                
+		                <TextView
+		                    android:id="@+id/ishowPayTitleTextView"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/setting_ishow_pay"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <TextView
+		                    android:id="@+id/myTextView_ishowPay"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		                
+		            </TableRow>
+		
+		            <TableRow
+		                android:id="@+id/tableRow4"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/setting_scenic_port"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <TextView
+		                    android:id="@+id/myTextView_ServerPort"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		                
+		                <TextView
+		                    android:layout_width="@dimen/dp_check_gap"
+		                    android:layout_height="wrap_content" />
+		
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/setting_communicate_time"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		
+		                <TextView
+		                    android:id="@+id/myTextView_WaitTime"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@android:color/black"
+		                    android:textSize="@dimen/sp_butWordSize" />
+		            </TableRow>
+		        </TableLayout>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" >
+                    
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/setting_sys_version"
+		                android:textColor="@android:color/black"
+		                android:textSize="@dimen/sp_butWordSize" />
+		
+		            <TextView
+		                android:id="@+id/myVersionTextView"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="@android:color/black"
+		                android:textSize="@dimen/sp_butWordSize" />
+                    
+                </TableRow>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+        		android:layout_weight="5" >
+
+                <Button
+                    android:id="@+id/myButton"
+                    android:layout_width="@dimen/dp_okbutton_width"
+                    android:layout_height="@dimen/dp_okbutton_hight"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+	            	android:background="@drawable/bt_button"
+                    android:textSize="@dimen/sp_butWordSize"
+	                android:text="@string/forparameterset" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+        	android:layout_weight="6"
+        	android:background="@drawable/bg_set_right" >
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/init_support1"
+            android:textSize="@dimen/sp_welNoteSize" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/sp_welNoteSize"
+            android:text="@string/init_support0" />
+
+    </RelativeLayout>
+
+</LinearLayout>

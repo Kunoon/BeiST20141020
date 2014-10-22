@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_wicket" >
+
+    <TextView
+        android:id="@+id/tv_sign_home1"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="新版本已将应用权限提升为桌面应用，用户需执行如下操作：" />
+
+    <TextView
+        android:id="@+id/tv_sign_home2"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sign_home1"
+        android:layout_centerHorizontal="true"
+        android:text="1、请重启设备。\n2、勾选“设置为默认选项”。\n3、点击选择“BeiSmartTravel”应用。"  />
+
+    <ImageView
+        android:id="@+id/iv_sign_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sign_home2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wel_start_home" />
+
+    <CheckBox
+        android:id="@+id/cb_rember"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="不再提示" />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_dialog_topay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dark_blue" >
+
+    <!--
+            android:textSize="@dimen/topay_dialog_warning"
+            android:textSize="@dimen/padding_left"
+    -->
+
+    <TextView
+        android:id="@+id/my_dialog_topay_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dialog_to_pay_warn"
+        android:textColor="@color/red"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/my_dialog_topay_textview_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_dialog_topay_warning"
+        android:layout_below="@+id/my_dialog_topay_warning"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/dialog_to_pay_textview_quantity"
+        android:focusable="true"
+    	android:focusableInTouchMode="true"
+        android:textSize="20px" />
+
+    <EditText
+        android:id="@+id/my_dialog_topay_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/my_dialog_topay_textview_quantity"
+        android:layout_alignBottom="@+id/my_dialog_topay_textview_quantity"
+        android:layout_toRightOf="@+id/my_dialog_topay_textview_quantity"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>

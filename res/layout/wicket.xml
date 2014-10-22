@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_wicket"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="检票页面"
+            android:textColor="@android:color/black"
+            android:textSize="30px" />
+
+		<Button
+		    android:id="@+id/wicketImageButton"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:background="@drawable/bt_menu_button"
+		    android:text="返回"
+		    android:textColor="@android:color/white"
+		    android:textSize="@dimen/sp_butWordSize" />
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_toRightOf="@+id/wicketImageButton"
+		    android:text="如果您需要修改某订单的使\n用数量或是需要处理到付，\n请点击该订单的“数量”列" />
+
+		<TextView
+		    android:text="AAAAAA"
+		    android:id="@+id/wicketTextView4PaperNum"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true" />
+
+		<TextView
+		    android:id="@+id/wicketTextView4ID"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_toLeftOf="@+id/wicketTextView4PaperNum" />
+
+		<CheckBox
+		    android:id="@+id/isPrintCheckBox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@+id/wicketTextView4PaperNum"
+		    android:text="打印门票收据"
+		    android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.95" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <CheckBox
+                android:id="@+id/CheckBox4All"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/goods_id"
+                android:textSize="@dimen/wicket_list_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/goods_name"
+                android:textSize="@dimen/wicket_list_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.9"
+                android:gravity="center"
+                android:text="@string/goods_quantity"
+                android:textSize="@dimen/wicket_list_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/goods_status"
+                android:textSize="@dimen/wicket_list_title" />
+        </LinearLayout>
+
+        <com.bei.smartravel.customization.MyProgressBar
+            android:id="@+id/myProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/ListView_Show_Check_Goods"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/myProgress"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:fadeScrollbars="false"
+            android:fastScrollEnabled="true" 
+            android:focusable="true" >
+        </ListView>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp" >
+
+        <Button
+            android:id="@+id/ButtonWicket"
+            android:layout_width="80px"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="打印并检票"
+            android:background="@drawable/bt_button" />
+        
+        <Button
+            android:id="@+id/wicketUpPageButton"
+            android:layout_width="80px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:background="@drawable/paper_up"
+            android:text="上一页" />
+
+        <Button
+            android:id="@+id/wicketDownPageButton"
+            android:layout_width="80px"
+            android:layout_height="40px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            android:background="@drawable/paper_down"
+            android:text="下一页" />
+
+        <TextView
+            android:id="@+id/wicketTextView4OrderNum"
+            android:textSize="@dimen/wicket_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignBaseline="@+id/wicketUpPageButton"
+            android:layout_alignBottom="@+id/wicketUpPageButton"
+            android:layout_toLeftOf="@+id/wicketDownPageButton"
+            android:layout_toRightOf="@+id/ButtonWicket"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/wicketTextView4OrderPayNum"
+            android:textSize="@dimen/wicket_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignBaseline="@+id/wicketUpPageButton"
+            android:layout_alignBottom="@+id/wicketUpPageButton"
+            android:layout_toLeftOf="@+id/ButtonWicket"
+            android:layout_toRightOf="@+id/wicketUpPageButton"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</LinearLayout>

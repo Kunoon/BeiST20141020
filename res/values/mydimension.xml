@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="sp_welWordSize">50sp</dimen>
+    <dimen name="sp_butWordSize">25sp</dimen>
+    <dimen name="sp_welNoteSize">20sp</dimen>
+    <dimen name="sp_counTitleSize">30sp</dimen>
+    <dimen name="dp_check_gap">20dp</dimen>
+    <dimen name="dp_okbutton_width">120dp</dimen>
+    <dimen name="dp_okbutton_hight">60dp</dimen>
+    
+    <dimen name="aasize">12px</dimen>
+    <dimen name="title_size">30px</dimen>
+    <dimen name="check_key_word_size">16px</dimen>
+    <dimen name="wicket_list_title">30px</dimen>
+    <dimen name="wicket_list_content">50px</dimen>
+    <dimen name="id_text_size">45px</dimen>
+    <dimen name="padding_left">50px</dimen>
+    <dimen name="topay_dialog_warning">35px</dimen>
+    
+</resources>

@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_wicket"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="查票页面"
+            android:textColor="@android:color/black"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/checkShowImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bt_menu_button"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_butWordSize" />
+
+        <TextView
+            android:id="@+id/myTextViewCheck4PaperNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/myTextViewCheckCountTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/myTextViewCheck4PaperNum"
+            android:text="@string/check_count_tickets"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.95" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/CheckBoxAll4Check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/goods_id"
+                android:textSize="@dimen/wicket_list_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/goods_name"
+                android:textSize="@dimen/wicket_list_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.9"
+                android:gravity="center"
+                android:text="@string/goods_quantity"
+                android:textSize="@dimen/wicket_list_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/goods_status"
+                android:textSize="@dimen/wicket_list_title" />
+        </LinearLayout>
+        
+        <ListView
+            android:id="@+id/ListView_Show_Check_Goods"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:fadeScrollbars="false"
+            android:fastScrollEnabled="true" 
+            android:focusable="true"
+            android:cacheColorHint="@android:color/transparent" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="105dp" >
+
+        <Button
+            android:id="@+id/ButtonCheckPrintf"
+            android:layout_width="80px"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_button"
+            android:text="打印" />
+
+        <Button
+            android:id="@+id/checkUpPageButton"
+            android:layout_width="80px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:background="@drawable/paper_up"
+            android:text="上一页" />
+
+        <Button
+            android:id="@+id/checkDownPageButton"
+            android:layout_width="80px"
+            android:layout_height="40px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="@drawable/paper_down"
+            android:text="下一页" />
+
+    </RelativeLayout>
+
+</LinearLayout>

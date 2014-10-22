@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_wicket"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="销售统计"
+            android:textColor="@android:color/black"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/salesCountBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bt_menu_button"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_butWordSize" />
+
+    </RelativeLayout>
+
+	<include
+	    android:id="@+id/sc_date_picker"
+	    layout="@layout/sales_count_date" />"
+	<include
+	    android:id="@+id/sc_items"
+	    layout="@layout/sales_count_list"
+	    android:visibility="gone" />"
+
+    <RelativeLayout
+        android:id="@+id/sales_count_relativeLayout"
+        android:layout_weight="2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/salesCountButton"
+            android:layout_width="80px"
+            android:layout_height="40px"
+            android:background="@drawable/bt_button"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/sp_butWordSize"
+            android:text="统计" />
+
+    </RelativeLayout>
+
+</LinearLayout>

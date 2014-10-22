@@ -1,0 +1,16 @@
+﻿<update>
+	<version>20141020S</version>
+	<upd>all</upd>
+	<nupd>no</nupd>
+	<url>/swap/4android/handheld/20140507/BeiSmartTravel20141020S.apk</url>
+	<upFunctions>
+		<function>1、版本号：20141020S</function>
+		<function>2、添加销售统计功能，统计已检已上传订单。</function>
+		<function>3、订单有效性的判断逻辑：开始时间 = 预定时间 + 预订延后，结束时间 = 开始时间 + 使用有效期。</function>
+		<function>注1：只有当有效订单使用完，待检订单才会生效!</function>
+		<function>       待检订单使用需要多次刷身份证。</function>
+		<function>注2：建议立即更新，如因未及时更新造成损失，后果自负!</function>
+		<function>       直接更新需要较长时间，建议可以使用网线更新</function>
+		<function>注3：如有疑问详情咨询 4000571648</function>
+	</upFunctions>
+</update>
